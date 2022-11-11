@@ -5,11 +5,7 @@ module.exports = {
   root: true,
   extends: [
     'plugin:vue/vue3-recommended',
-    '@vue/eslint-config-typescript',
-    '@vue/airbnb',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
+    '@vue/eslint-config-airbnb-with-typescript',
   ],
   overrides: [
     {
@@ -27,18 +23,5 @@ module.exports = {
   rules: {
     'import/prefer-default-export': 0,
     'import/no-extraneous-dependencies': 0,
-    'import/extensions': ['error', 'ignorePackages', {
-      ts: 'never',
-    }],
-  },
-  settings: {
-    'import/resolver': {
-      typescript: {},
-      alias: {
-        map: [
-          ['@', './src'],
-        ],
-      },
-    },
   },
 };
