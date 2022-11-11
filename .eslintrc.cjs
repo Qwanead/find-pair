@@ -31,4 +31,14 @@ module.exports = {
       ts: 'never',
     }],
   },
+  settings: {
+    'import/resolver': {
+      typescript: {},
+      alias: {
+        map: [
+          ['@', './src'],
+        ],
+      },
+    },
+  },
 };
