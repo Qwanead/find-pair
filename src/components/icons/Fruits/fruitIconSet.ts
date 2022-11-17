@@ -1,3 +1,4 @@
+import type { Component } from 'vue';
 import IconBanana from '@/components/icons/Fruits/IconBanana.vue';
 import IconLimon from '@/components/icons/Fruits/IconLimon.vue';
 import IconCherry from '@/components/icons/Fruits/IconCherry.vue';
@@ -19,27 +20,27 @@ import IconApple from '@/components/icons/Fruits/IconApple.vue';
 import IconGrape from '@/components/icons/Fruits/IconGrape.vue';
 import IconAvocado from '@/components/icons/Fruits/IconAvocado.vue';
 
-const fruitIconSet = {
-  banana: IconBanana,
-  limon: IconLimon,
-  cherry: IconCherry,
-  plum: IconPlum,
-  coconut: IconCoconut,
-  mango: IconMango,
-  orange: IconOrange,
-  melon: IconMelon,
-  waterMelon: IconWaterMelon,
-  amoras: IconAmoras,
-  peach: IconPeach,
-  cacao: IconCacao,
-  maracuja: IconMaracuja,
-  tamarind: IconTamarind,
-  pineapple: IconPineapple,
-  strawberry: IconStrawberry,
-  pear: IconPear,
-  apple: IconApple,
-  grape: IconGrape,
-  acocado: IconAvocado,
-} as const;
+const fruitIconSet = [
+  IconBanana,
+  IconLimon,
+  IconCherry,
+  IconPlum,
+  IconCoconut,
+  IconMango,
+  IconOrange,
+  IconMelon,
+  IconWaterMelon,
+  IconAmoras,
+  IconPeach,
+  IconCacao,
+  IconMaracuja,
+  IconTamarind,
+  IconPineapple,
+  IconStrawberry,
+  IconPear,
+  IconApple,
+  IconGrape,
+  IconAvocado,
+] as Component[];
 
 export default fruitIconSet;

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { FLIP_ANIMATION_TIME } from '@/settings';
+
 const props = defineProps<{
   flip: boolean,
   hide: boolean,
@@ -15,7 +17,10 @@ const props = defineProps<{
       },
     ]"
   >
-    <div class="card__content">
+    <div
+      class="card__content"
+      :style="{ 'transition-duration': `${FLIP_ANIMATION_TIME}s` }"
+    >
       <div class="card__front">
         <slot />
       </div>
@@ -53,9 +58,8 @@ const props = defineProps<{
   width: 100%;
   height: 100%;
 
-  transition:
-    transform 0.35s ease-out,
-    opacity 0.35s ease-out;
+  transition-property: all;
+  transition-timing-function: ease-out;
   transform: rotateY(180deg) scale(1);
 
   border-radius: 5px;

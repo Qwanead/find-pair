@@ -23,5 +23,7 @@ module.exports = {
   rules: {
     'import/prefer-default-export': 0,
     'import/no-extraneous-dependencies': 0,
+    'lines-between-class-member': 0,
+    '@typescript-eslint/lines-between-class-members': 0,
   },
 };
