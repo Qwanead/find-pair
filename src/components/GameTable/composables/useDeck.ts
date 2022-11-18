@@ -10,7 +10,7 @@ const useDeck = () => {
 
   const generateDeck = (length: number) => shuffleArr(new Array(length)
     .fill(null)
-    .map((_, i) => reactive(new Card(i, i < length ? i : i - length))));
+    .map((_, i) => reactive(new Card(i, i < length / 2 ? i : i - length / 2))));
 
   const iconSet = generateIconSet(fruitIconSet, UNIQUE_CARDS);
   const deck = generateDeck(UNIQUE_CARDS * 2);
